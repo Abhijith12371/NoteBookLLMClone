@@ -4,7 +4,7 @@ from elevenlabs.client import ElevenLabs
 from elevenlabs import play, save
 
 # Step 1: Set up Gemini
-GEMINI_API_KEY = "AIzaSyBGZjafGGMHwSB4Gq234s9Jmoc_rxgtv-k"
+GEMINI_API_KEY = ""
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY environment variable is not set.")
 
@@ -40,7 +40,7 @@ def generate_conversation() -> str:
 # Step 4: Convert the conversation to audio using ElevenLabs
 def text_to_audio(text: str, female_voice: str = "Rachel", male_voice: str = "Domi") -> None:
     try:
-        api_key = "sk_94cd146591797de121db944e8cf15b6dbde3dc56ea9135c4"
+        api_key = ""
         if not api_key:
             raise ValueError("ELEVENLABS_API_KEY environment variable is not set.")
 
